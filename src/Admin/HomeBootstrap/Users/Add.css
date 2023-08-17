@@ -1,0 +1,41 @@
+.adduserbtn {
+  border-radius: 10px;
+  background-color: #0000b3;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  border-width: 0px;
+}
+
+.containeruser {
+  width: fit-content;
+}
+@media screen and (max-width: 700px) {
+  .containeruser {
+    margin-left: 0px;
+  }
+}
+.uploadimage {
+  width: 50%;
+  height: 50%;
+  margin-left: 80px;
+  margin-top: 20px;
+}
+label{
+  color: #0000b3;
+}
+.uploadpic {
+  margin-left: 20px;
+}
+
+.columns {
+  margin-left: 80px;
+}
+.form-control {
+  background-color: white;
+}
+.phonenumber{
+  width: 100%;
+  padding: 0%;
+  padding: 15px;
+}

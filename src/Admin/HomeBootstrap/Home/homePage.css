@@ -1,0 +1,108 @@
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  position: fixed;
+  transition: 1s;
+  background-color: #0000b3;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 16px;
+  margin-top: 20px;
+  font-size:large;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.btnactive {
+  background-color: #0010d9;
+  color: white;
+}
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: rgb(127, 19, 229);
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  height: 100%;
+  padding-top: 100px;
+  background-color: white;
+}
+
+.header {
+  position: fixed;
+  padding: 20px;
+  width: 100%;
+  margin-left: 200px;
+  background-color: #0000b3;
+}
+
+
+.homelogo {
+  background-color: white;
+  height: 80px;
+  border-top-right-radius: 20px;
+  display: block;
+  padding: 6px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+
+.dropdown {
+  margin-left: 880px;
+}
+.avatar {
+  width: 50px;
+}
+.avatarbtn {
+  border-width: 0px;
+  background-color: #0000b3;
+  border-color: #0000b3;
+}
+.avatarbtn:hover {
+  background-color: #0010d9;
+}
+
+
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  div.content {
+    margin-left: 0;
+  }
+  .dropdown {
+    margin-left: 0px;
+  }
+  .header{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-left: 0px;
+  }
+  
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+
